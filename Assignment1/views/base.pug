@@ -1,0 +1,36 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css')
+    link(rel='stylesheet', href='/css/style.css')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js')
+  body
+    //- Particle background
+    #particles-js
+    .overlay
+      header
+        .container
+          nav.navbar.navbar-expand-lg.navbar-dark
+            button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+              span.navbar-toggler-icon
+            .collapse.navbar-collapse#navbarNav
+              ul.navbar-nav.ml-auto
+                li.nav-item: a.nav-link(href='/') Home
+                li.nav-item: a.nav-link(href='/about') About
+                li.nav-item: a.nav-link(href='/services') Services
+                li.nav-item: a.nav-link(href='/contact') Contact
+                li.nav-item: a.nav-link(href='/photos') Photos
+      main.container.mt-5
+        block content
+      .footer
+        footer.footer.text-center.bg-dark.text-white.py-4
+          p &copy; #{new Date().getFullYear()} Photo Haven, all rights reserved.
+    script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js')
+    script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js')
+    script.
+      particlesJS.load('particles-js', '/particles.json', function() {
+        console.log('callback - particles.js config loaded');
+      });

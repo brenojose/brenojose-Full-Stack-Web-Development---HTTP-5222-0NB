@@ -1,0 +1,145 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: #09090B; /* Dark background for particles */
+}
+
+.overlay {
+  position: relative;
+  z-index: 1;
+}
+
+header {
+  background: url('/images/photoHaven.gif') no-repeat center;
+  background-size: 500px;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+nav a {
+  color: #FFC673 !important; /* Light orange text */
+}
+
+/* Ensure the "Recent Work" header is white */
+h2.text-center {
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+nav a:hover {
+  color: #fff !important;
+  background: #2D1A11 !important; /* Dark background on hover */
+  border-radius: 5px;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.jumbotron {
+  padding: 20px;
+  border-radius: 8px;
+  background: linear-gradient(to right, #8b4432, #b1813a);
+  border-color: white;
+  border-style: double;
+}
+
+.card {
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  background: linear-gradient(to right, #2D1A11, #09090B); /* Brown gradient */
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.main-content {
+  padding-bottom: 60px; /* Same height as the footer */
+}
+
+/* Ensure equal height for card images */
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+
+/* Additional styling for buttons */
+.btn {
+  border-radius: 8px;
+  background-color: #2D1A11;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #09090B;
+}
+
+/* Styling for card headers */
+.card-header {
+  border-radius: 8px 8px 0 0;
+}
+
+/* Particle overlay adjustments */
+.particle-overlay {
+  position: relative;
+  z-index: 2;
+}
+
+label, div.col-md-6.text-center, p.text-center.mb-5 {
+  color: white;
+}
+
+/* Flex adjustments for equal card heights */
+.d-flex {
+  display: flex !important;
+}
+
+.align-items-stretch {
+  align-items: stretch !important;
+}
+
+.flex-fill {
+  flex: 1 1 auto !important;
+}
+
+.flex-grow-1 {
+  flex-grow: 1 !important;
+}

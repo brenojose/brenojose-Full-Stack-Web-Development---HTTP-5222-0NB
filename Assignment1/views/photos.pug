@@ -1,0 +1,37 @@
+extends base
+
+block content
+  .container.mt-5.main-content
+    .row.mt-4
+      each photo in photos
+        .col-md-4.d-flex.align-items-stretch
+          .card.flex-fill
+            img.card-img-top(src=photo.url, alt=photo.title)
+            .card-body.d-flex.flex-column
+              h5.card-title= photo.title
+              p.card-text Price: $#{photo.price}
+              p.card-text.flex-grow-1= photo.description
+              p.card-text Category: #{photo.category}
+              p.card-text Stock: #{photo.stock}
+
+    h2.text-center.mt-5 Add a New Photo
+    form(action='/photos/add', method='post')
+      .form-group
+        label(for='title') Title:
+        input.form-control(type='text', name='title', required)
+      .form-group
+        label(for='description') Description:
+        textarea.form-control(name='description', required)
+      .form-group
+        label(for='price') Price:
+        input.form-control(type='number', name='price', required)
+      .form-group
+        label(for='url') Photo URL:
+        input.form-control(type='text', name='url', required)
+      .form-group
+        label(for='category') Category:
+        input.form-control(type='text', name='category', required)
+      .form-group
+        label(for='stock') Stock:
+        input.form-control(type='number', name='stock', required)
+      button.btn.btn-primary(type='submit') Add Photo
