@@ -22,13 +22,13 @@ npm install pokemon-js-wrapper
 ```
 3. **Usage and Technologies**:
 - **Usage**
-   *Pokémon Search*: Use the search bar on the Home page to find Pokémon details, you can input numbers from 1 to 1010 (Pokemon IDs) or the names of them.
-   *News*: Navigate to the News page for the latest articles.
+   - *Pokémon Search*: Use the search bar on the Home page to find Pokémon details, you can input numbers from 1 to 1010 (Pokemon IDs) or the names of them.
+   - *News*: Navigate to the News page for the latest articles.
   
 - **Technologies Used**
-   *React for building the UI.*
-   *PokéAPI and News API for data.*
-  *pokemon-js-wrapper for API interactions.*
+   - *React for building the UI.*
+   - *PokéAPI and News API for data.*
+   - *pokemon-js-wrapper for API interactions.*
 
 To run the project:
   ```
