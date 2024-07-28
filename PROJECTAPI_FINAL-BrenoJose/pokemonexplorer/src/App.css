@@ -1,0 +1,127 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  background-image: url('/images/pokemon1st.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.App {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 48px; 
+}
+
+p {
+  margin: 10px 0;
+  font-size: 19.2px;
+}
+
+nav {
+  margin-bottom: 20px;
+}
+
+nav a {
+  margin: 0 15px;
+  color: #ffcb05;
+  text-decoration: none;
+  font-size: 17.6px; 
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+.main-content {
+  padding: 20px;
+  border-radius: 12px;
+  color: #333;
+  margin-top: 20px;
+}
+
+.pokemon-info {
+  background: inherit; 
+  padding: 20px;
+  border-radius: 12px;
+  color: #fff;
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 2px solid #2a75bb;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 400px;
+  margin-top: 20px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.news-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  color: #333;
+  max-height: 600px; 
+  overflow-y: auto;  
+}
+
+.news-page h2 {
+  margin-top: 0;
+}
+
+.news-page ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.news-page li {
+  margin: 10px 0;
+}
+
+.news-page a {
+  color: #2a75bb;
+  text-decoration: none;
+}
+
+.news-page a:hover {
+  text-decoration: underline;
+}
