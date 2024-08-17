@@ -82,7 +82,9 @@ const Projects = () => {
                                 whileInView="show" // Animation state when in view
                                 key={project.project_name} // Unique key for each project
                                 className="space-y-4 px-4 mb-8 items-center justify-center"> {/* Project item container */}
+                                <a href={`${project.project_url}`} target="_blank">
                                 <img src={`http://localhost/Joanna/${project.project_thumbnail}`} alt={project.project_name} className="w-full h-[240px] hover:scale-110 hover:shadow-lg duration-300" /> {/* Project thumbnail */}
+                                </a>
                                 <p className="text-2xl font-semibold">{project.project_name}</p> {/* Project name */}
                             </motion.div>
                         ))
