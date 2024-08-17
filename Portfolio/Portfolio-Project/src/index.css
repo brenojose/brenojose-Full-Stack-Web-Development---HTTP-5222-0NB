@@ -1,0 +1,16 @@
+/* Import base styles from Tailwind CSS */
+@tailwind base;
+
+/* Import component styles from Tailwind CSS */
+@tailwind components;
+
+/* Import utility styles from Tailwind CSS */
+@tailwind utilities;
+
+/* Extend Tailwind CSS utilities with custom styles */
+@layer utilities {
+    /* Define a custom utility class for adding a drop shadow to images */
+    .img-shadow {
+        filter: drop-shadow(-40px 50px 25px #1d1117); /* Apply a drop shadow with specific offset, blur, and color */
+    }
+}
